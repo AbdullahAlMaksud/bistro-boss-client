@@ -5,11 +5,17 @@ import Navbar from '../pages/shared/navbar/Navbar';
 
 const MainLayouts = () => {
     return (
-        <div>
-            <Navbar/>
-            <Outlet/>
-            <Footer/>
-        </div>
+        <main>
+            <section className='fixed z-50 w-full'>
+                <Navbar />
+            </section>
+            <section>
+                <Outlet />
+            </section>
+            <section>
+                <Footer />
+            </section>
+        </main>
     );
 };
 

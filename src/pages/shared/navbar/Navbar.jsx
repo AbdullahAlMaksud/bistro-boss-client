@@ -8,7 +8,7 @@ const Navbar = () => {
         <li><a>Item 3</a></li>
     </>
     return (
-        <div className="bg-black/10">
+        <div className="bg-black/70 max-w-screen-xl">
             <section className='w-11/12 mx-auto flex justify-between items-center'>
                 <div className="flex items-center justify-start w-52 flex-1 lg:flex-none">
                     <div className="dropdown">
@@ -34,7 +34,7 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                    <Link to={'/'} className='flex gap-2 justify-center items-center py-2'>
+                    <Link to={'/'} className='flex gap-2 justify-center items-center py-2 text-white'>
                         <img src='./fav.svg' className="w-12 mb-2" />
 
                         <div className='flex flex-col justify-center items-center'>
