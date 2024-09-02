@@ -26,23 +26,23 @@ const Category = () => {
             >
                 <SwiperSlide>
                     <img src={slide1} alt="" />
-                    <h3 className='text-4xl uppercase text-center text-white  -mt-16 font-cinzel'>Salad</h3>
+                    <h3 className='[text-shadow:_0_2px_4px_rgb(000_000_000_/_0.9)] text-white -mt-16 text-center text-xl md:text-2xl uppercase leading-snug font-cinzel'>Salad</h3>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={slide2} alt="" />
-                    <h3 className='text-4xl uppercase text-center text-white  -mt-16 font-cinzel'>Pizzas</h3>
+                    <h3 className='[text-shadow:_0_2px_4px_rgb(000_000_000_/_0.9)] text-white -mt-16 text-center text-xl md:text-2xl uppercase leading-snug font-cinzel'>Pizzas</h3>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={slide3} alt="" />
-                    <h3 className='text-4xl uppercase text-center text-white  -mt-16 font-cinzel'>Soups</h3>
+                    <h3 className='[text-shadow:_0_2px_4px_rgb(000_000_000_/_0.9)] text-white -mt-16 text-center text-xl md:text-2xl uppercase leading-snug font-cinzel'>Soups</h3>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={slide4} alt="" />
-                    <h3 className='text-4xl uppercase text-center text-white  -mt-16 font-cinzel'>Deserts</h3>
+                    <h3 className='[text-shadow:_0_2px_4px_rgb(000_000_000_/_0.9)] text-white -mt-16 text-center text-xl md:text-2xl uppercase leading-snug font-cinzel'>Deserts</h3>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={slide5} alt="" />
-                    <h3 className='text-4xl uppercase text-center text-white  -mt-16 font-cinzel'>Salads</h3>
+                    <h3 className='[text-shadow:_0_2px_4px_rgb(000_000_000_/_0.9)] text-white -mt-16 text-center text-xl md:text-2xl uppercase leading-snug font-cinzel'>Salads</h3>
                 </SwiperSlide>
             </Swiper>
         </>
