@@ -5,8 +5,12 @@ const Testimonials = () => {
     return (
         <section> 
             <SectionTitle heading={'Testimonials'} subheading={'What Our Client Say'}/>
-        </section>
-    );
+        
+        <div>
+            <h2>Maksud</h2>
+            </div>
+            </section>
+            );
 };
 
 export default Testimonials;
