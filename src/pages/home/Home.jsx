@@ -8,11 +8,16 @@ import Testimonials from './Testimonials/Testimonials';
 const Home = () => {
     return (
         <div>
-            <Banner/>
-            <Category/>
-            <PopularMenu/>
-            <Feartured></Feartured>
-            <Testimonials/>
+            <Banner />
+            <div className='w-11/12 mx-auto'>
+                <Category />
+                <PopularMenu />
+            </div>
+            <Feartured />
+            <div className='w-11/12 mx-auto'>
+
+                <Testimonials />
+            </div>
         </div>
     );
 };

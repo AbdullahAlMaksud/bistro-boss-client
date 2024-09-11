@@ -8,7 +8,7 @@ const Navbar = () => {
         <li><a>Item 3</a></li>
     </>
     return (
-        <div className="bg-black/70 max-w-screen-xl">
+        <div className="bg-black/70 text-white">
             <section className='w-11/12 mx-auto flex justify-between items-center'>
                 <div className="flex items-center justify-start w-52 flex-1 lg:flex-none">
                     <div className="dropdown">
