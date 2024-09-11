@@ -6,7 +6,7 @@ import './featured.css'
 const Feartured = () => {
     return (
         <div className='featured-img bg-fixed text-white my-20'>
-            <div className='bg-black/60 pt-10'>
+            <div className='bg-black/60 pt-10 backdrop-blur-sm'>
             <SectionTitle heading={'Featured Item'} subheading={'Check it out'} />
            
            <div className='md:flex justify-center items-center pb-20 pt-12 px-36'>
