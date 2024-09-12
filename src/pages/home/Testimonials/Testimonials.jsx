@@ -9,6 +9,8 @@ import { Pagination } from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
 
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
+import { BsQuote } from 'react-icons/bs';
+import { FaQuoteLeft } from 'react-icons/fa6';
 
 const Testimonials = () => {
 
@@ -35,10 +37,11 @@ const Testimonials = () => {
                 <Swiper navigation={true} modules={[Navigation]} className='mySwiper'>
 {/* <p>{reviews?.length}</p> */}
                     {
-                        reviews?.map(review =><SwiperSlide key={review._id}>
-                            <div>
+                        reviews?.map(review =><SwiperSlide key={review._id} className='bg-gray-50 border p-20 rounded'>
+                            <div className='flex flex-col items-center justify-center text-center'>
+                                <FaQuoteLeft className='text-7xl'/>
                                 <p>{review?.details}</p>
-                                <h3 className='text-xl text-orange-400'>{review?.name}</h3>
+                                <h3 className='text-xl text-[#CD9003]'>{review?.name}</h3>
                             </div>
                         </SwiperSlide>
                         )
