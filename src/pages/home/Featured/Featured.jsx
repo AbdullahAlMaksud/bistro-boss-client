@@ -17,7 +17,7 @@ const Feartured = () => {
                    <p>Aug 20,2020</p>
                    <p className='uppercase'>Where can i get some?</p>
                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis nisi hic magnam repudiandae voluptas. Voluptates fuga quam error alias ex voluptatem libero doloremque consectetur dolores corporis repellat, eos dolorem perspiciatis suscipit doloribus blanditiis cupiditate nihil optio! Sapiente laborum fugit dicta rem mollitia vel impedit. Tempore eaque officia architecto numquam iusto?</p>
-                   <button className='btn btn-outline border-0 border-b-2'>Order Now</button>
+                   <button className='btn text-yellow-100 hover:bg-yellow-900 btn-outline border-0 border-b-2'>Order Now</button>
                </div>
            </div>
             </div>
