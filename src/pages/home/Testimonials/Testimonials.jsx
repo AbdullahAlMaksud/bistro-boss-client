@@ -9,25 +9,33 @@ import { Pagination } from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
 
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
-import { BsQuote } from 'react-icons/bs';
+import { BsFillStarFill } from 'react-icons/bs';
 import { FaQuoteLeft } from 'react-icons/fa6';
 
 const Testimonials = () => {
-
     const [reviews, setReviews] = useState([]);
-    // const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         fetch('./reviews.json')
             .then(res => res.json())
             .then(data => {
-                // setLoading(true)
-                setReviews(data)
-                // setLoading(false)
-            })
-    }, [])
+                setReviews(data);
+            });
+    }, []);
 
-    // if (loading) return <div className='h-20 flex items-center justify-center'><span className='loading loading-lg loading-infinity'></span></div>
+    const renderStars = (rating) => {
+        const totalStars = 5;
+        return (
+            <div className='flex'>
+                {[...Array(totalStars)].map((_, index) => (
+                    <BsFillStarFill
+                        key={index}
+                        className={`h-5 w-5 ${index < rating ? 'text-yellow-500' : 'text-gray-300'}`}
+                    />
+                ))}
+            </div>
+        );
+    };
 
     return (
         <section className='my-20'>
@@ -35,18 +43,17 @@ const Testimonials = () => {
 
             <div>
                 <Swiper navigation={true} modules={[Navigation]} className='mySwiper'>
-{/* <p>{reviews?.length}</p> */}
-                    {
-                        reviews?.map(review =><SwiperSlide key={review._id} className='bg-gray-50 border p-20 rounded'>
+                    {reviews?.map(review => (
+                        <SwiperSlide key={review._id} className='bg-gray-50 border p-20 rounded'>
                             <div className='flex flex-col items-center justify-center text-center'>
-                                <FaQuoteLeft className='text-7xl'/>
+                                <FaQuoteLeft className='text-7xl' />
                                 <p>{review?.details}</p>
                                 <h3 className='text-xl text-[#CD9003]'>{review?.name}</h3>
+                                {/* Render the star rating */}
+                                {renderStars(review?.rating)}
                             </div>
                         </SwiperSlide>
-                        )
-                    }
-
+                    ))}
                 </Swiper>
             </div>
         </section>
