@@ -56,6 +56,7 @@ const Testimonials = () => {
                     ))}
                 </Swiper>
             </div>
+            <button>New btn</button>
         </section>
     );
 };
